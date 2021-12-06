@@ -10,7 +10,7 @@ client.on("ready", () =>{
 });
 
 client.on("guildMemberAdd", member => {
-    if(member.user.username.includes("mora")){
+    if(member.user.username.includes("ora")){
     //console.log(/*"est ban"*/"est" + member.user.username)
     console.log(member.user.username + " est ban car il possède un pseudon non conforme")
     member.guild.member(member.user.id).ban({reason: 'ban'})
@@ -41,7 +41,7 @@ client.on("guildMemberAdd", member => {
 
 client.on("message", async message =>{
 
-    if(message.author.username.includes("mora")){
+    if(message.author.username.includes("ora")){
         //console.log(/*"est ban"*/"est" + member.user.username)
         console.log(message.author.username + " est ban car il possède un pseudon non conforme")
         message.guild.member(message.author.id).ban({reason: 'ban'})

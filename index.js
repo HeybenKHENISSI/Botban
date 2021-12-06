@@ -10,7 +10,7 @@ client.on("ready", () =>{
 });
 
 client.on("guildMemberAdd", member => {
-    if(member.user.username.includes("ora")){
+    if(member.user.username.includes("Announcement") || member.user.username.includes("Admin") || member.user.username.includes("Moderator") || member.user.username.includes("Important") || member.user.username.includes("Mint") || member.user.username.includes("Minting") || member.user.username.includes("Administrator") || member.user.username.includes("Director") || member.user.username.includes("CEO") || member.user.username.includes("CTO") || member.user.username.includes("Manager") || member.user.username.includes("Announcements") || member.user.username.includes("Bot") ||  member.user.username.includes("Notification")){
     //console.log(/*"est ban"*/"est" + member.user.username)
     console.log(member.user.username + " est ban car il possède un pseudon non conforme")
     member.guild.member(member.user.id).ban({reason: 'ban'})
@@ -41,7 +41,7 @@ client.on("guildMemberAdd", member => {
 
 client.on("message", async message =>{
 
-    if(message.author.username.includes("ora")){
+    if(message.author.username.includes("Announcement") || message.author.username.includes("Admin") || message.author.username.includes("Moderator") || message.author.username.includes("Important") || message.author.username.includes("Mint") || message.author.username.includes("Minting") || message.author.username.includes("Administrator") || message.author.username.includes("Director") || message.author.username.includes("CEO") || message.author.username.includes("CTO") || message.author.username.includes("Manager") || message.author.username.includes("Announcements") || message.author.username.includes("Bot") ||  message.author.username.includes("Notification")){
         //console.log(/*"est ban"*/"est" + member.user.username)
         console.log(message.author.username + " est ban car il possède un pseudon non conforme")
         message.guild.member(message.author.id).ban({reason: 'ban'})

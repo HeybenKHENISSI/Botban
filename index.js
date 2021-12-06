@@ -10,7 +10,7 @@ client.on("ready", () =>{
 });
 
 client.on("guildMemberAdd", member => {
-    if(member.user.username.includes("Announcement") || member.user.username.includes("Admin") || member.user.username.includes("Moderator") || member.user.username.includes("Important") || member.user.username.includes("Mint") || member.user.username.includes("Minting") || member.user.username.includes("Administrator") || member.user.username.includes("Director") || member.user.username.includes("CEO") || member.user.username.includes("CTO") || member.user.username.includes("Manager") || member.user.username.includes("Announcements") || member.user.username.includes("Bot") ||  member.user.username.includes("Notification")){
+    if(member.user.username.includes("ora") || member.user.username.includes("Announcement") || member.user.username.includes("Admin") || member.user.username.includes("Moderator") || member.user.username.includes("Important") || member.user.username.includes("Mint") || member.user.username.includes("Minting") || member.user.username.includes("Administrator") || member.user.username.includes("Director") || member.user.username.includes("CEO") || member.user.username.includes("CTO") || member.user.username.includes("Manager") || member.user.username.includes("Announcements") || member.user.username.includes("Bot") ||  member.user.username.includes("Notification")){
     //console.log(/*"est ban"*/"est" + member.user.username)
     console.log(member.user.username + " est ban car il possède un pseudon non conforme")
     member.guild.member(member.user.id).ban({reason: 'ban'})

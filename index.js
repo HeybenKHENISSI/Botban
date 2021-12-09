@@ -42,11 +42,12 @@ client.on("guildMemberAdd", member => {
 });
 
 client.on("message", async message =>{
-
+    if (message.author.user.bot == false) {
     if(message.author.username.includes("Announcement") || message.author.username.includes("Admin") || message.author.username.includes("Moderator") || message.author.username.includes("Important") || message.author.username.includes("Mint") || message.author.username.includes("Minting") || message.author.username.includes("Administrator") || message.author.username.includes("Director") || message.author.username.includes("CEO") || message.author.username.includes("CTO") || message.author.username.includes("Manager") || message.author.username.includes("Announcements") || message.author.username.includes("Bot") ||  message.author.username.includes("Notification")){
         //console.log(/*"est ban"*/"est" + member.user.username)
         console.log(message.author.username + " est ban car il possède un pseudon non conforme")
         message.guild.member(message.author.id).ban({reason: 'ban'})
+    }
     }
    /* else{
         if(message.content.includes("mora") || message.content.includes("lol")){
